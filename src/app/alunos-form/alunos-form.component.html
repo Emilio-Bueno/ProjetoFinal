@@ -20,7 +20,7 @@
             </div>
             <div class="mb-3">
                 <label for="endereco" class="form-label">Endereço:</label>
-                <input type="number" formControlName="endereco" class="form-control" id="endereco" placeholder="Coloque seu Endereço:">
+                <input type="text" formControlName="endereco" class="form-control" id="endereco" placeholder="Coloque seu Endereço:">
                 <div *ngIf="submitted && endereco.invalid">
                     <small class="text-danger">Endereço Invalido!</small>
                 </div>

@@ -1,4 +1,42 @@
 {
-  "Professores": [],
-  "Alunos": []
+  "Professores": [
+    {
+      "id": 1,
+      "nome": "Glauco",
+      "telefone": 119999999,
+      "idade": 30
+    },
+    {
+      "id": 2,
+      "nome": "Renato",
+      "telefone": 11988888888,
+      "idade": 50
+    },
+    {
+      "id": 3,
+      "nome": "Tadeu",
+      "telefone": 119777777,
+      "idade": 40
+    }
+  ],
+  "Alunos": [
+    {
+      "id": 1,
+      "nome": "Emilio",
+      "idade": 18,
+      "endereco": "Casa"
+    },
+    {
+      "id": 2,
+      "nome": "Davi",
+      "idade": 18,
+      "endereco": "Casa dele"
+    },
+    {
+      "id": 3,
+      "nome": "Léo",
+      "idade": 18,
+      "endereco": "Casa Dele"
+    }
+  ]
 }
