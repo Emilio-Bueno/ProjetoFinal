@@ -1,1 +1,37 @@
-<p>professores-form works!</p>
+<div class="row mt-4">
+    <div class="col-8 m-auto">
+        <form [formGroup]="formGroupProfessor">
+            <div class="mb-3">
+                <div class="display-6 text-center">
+                    Cadastro de professores
+                </div>
+                <label for="nome" class="form-label">Nome:</label>
+                <input type="text" formControlName="nome" class="form-control" id="nome" placeholder="Coloque seu Nome:">
+                <div *ngIf="submitted && nome.invalid">
+                    <small class="text-danger">Nome Invalido!</small>
+                </div>
+            </div>
+
+            <div class="mb-3">
+                <label for="telefone" class="form-label">Celular:</label>
+                <input type="number" formControlName="telefone" class="form-control" id="numero" placeholder="Coloque seu Telefone:">
+                <div *ngIf="submitted && telefone.invalid">
+                    <small class="text-danger">Número Invalido!</small>
+                </div>
+            </div>
+
+            <div class="mb-3">
+                <label for="idade" class="form-label">idade:</label>
+                <input type="number" formControlName="idade" class="form-control" id="idade" placeholder="Coloque sua idade:">
+                <div *ngIf="submitted && idade.invalid">
+                    <small class="text-danger">Idade Invalida!</small>
+                </div>
+            </div>
+            <div class="mb-3 d-flex justify-content-end">
+                <button class="btn btn-dark me-2" (click)="save()">Salvar</button>
+                <button class="btn btn-warning" (click)="clean()">Limpar</button>
+            </div>
+
+        </form>
+    </div>
+</div>
